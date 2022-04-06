@@ -1,9 +1,358 @@
-*{
-    background-color: #f1f1f1;
+/*
+
+@author Neubourg Tibo
+
+*/
+
+/*global*/
+* {
+	font-family: sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	margin: 0;
+
 }
 
-header
-{
+h3 {
+	font-size: 20px;
+}
+
+.inverted {
+	background-color: black;
+	color: #fff;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.structural {
+	visibility: hidden;
+}
+
+/*header*/
+header {
 	background-color: #f1f1f1;
 	text-align: center;
+}
+
+header h1 {
+	font-size: 36px;
+	padding-bottom: 16px;
+	padding-top: 36px;
+}
+
+nav {
+	background-color: #f1f1f1;
+	text-align: center;
+}
+
+nav ul {
+	display: block;
+	flex-flow: row wrap;
+	justify-content: center;
+	/*margin-left: -35px;*/
+	margin-top: 32px;
+	padding-bottom: 32px;
+	padding-left: 0;
+	text-align: center;
+
+}
+
+nav li {
+	margin-bottom: 10px;
+	list-style-type: none;
+}
+
+nav a {
+	color: black;
+	margin-left: 10px;
+	padding: 10px;
+	text-decoration: none;
+}
+
+nav a:active {
+	background-color: #ccc;
+}
+
+nav a:hover {
+	background-color: white;
+	transition: 0.3s;
+}
+
+/*main*/
+.wrapper main {
+	width: 100%;
+	display: block;
+
+}
+
+#blogentries {
+	width: 100%;
+}
+
+aside {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+
+}
+
+aside section {
+	margin-left: auto;
+}
+
+/* aside div{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 5rem;
+} */
+
+main {
+	background-color: #f1f1f1;
+}
+
+.card div {
+	padding: 10px;
+}
+
+.card {
+	background-color: #fff;
+	border: 1px #ccc;
+	box-shadow: 0px 4px 10px #280000;
+	box-shadow: 0px 4px 20px #280000;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+.card img {
+	width: 100%;
+}
+
+article h1 {
+	font-size: 24px;
+}
+
+.subtitle {
+	font-size: 18px;
+	padding-bottom: 12px;
+}
+
+.date {
+	color: hsla(0, 0, 0, 0.6);
+}
+
+.button {
+	display: flex;
+	flex-flow: nowrap;
+	border: 1px groove #ccc;
+	max-width: 110px;
+	margin-top: 16px;
+}
+
+.button:hover {
+	background-color: #ccc;
+	transition: 0.3s;
+}
+
+.button a {
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.comments {
+	visibility: hidden;
+}
+
+.card_cv {
+	background-color: #fff;
+	border: 1px #ccc;
+	box-shadow: 0px 4px 10px #280000;
+	box-shadow: 0px 4px 20px #280000;
+	display: block;
+	margin-bottom: 50px;
+	margin-right: auto;
+	width: 90%;
+}
+
+.card_cv img {
+	width: 100%;
+}
+
+.card_cv div {
+	padding: 10px;
+}
+
+.card_cv h3 {
+	padding-bottom: 10px;
+}
+
+
+.card_foto h3 {
+	background-color: #F1F1F1;
+	font-weight: lighter;
+	padding: 10px;
+}
+
+.card_foto ul {
+	display: flex;
+	flex-flow: row wrap;
+	list-style-type: none;
+	margin-bottom: 16px;
+	margin-left: -40px;
+	margin-top: 16px;
+}
+
+.card_foto li {
+	background-color: #f1f1f1;
+	margin-bottom: 12px;
+	margin-left: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.card_foto {
+	background-color: #fff;
+	border: 1px #ccc;
+	box-shadow: 0px 4px 10px #280000;
+	box-shadow: 0px 4px 20px #280000;
+	margin-bottom: 50px;
+	margin-right: auto;
+	width: 90%;
+}
+
+.card_foto img{
+	width: 20%;
+	margin-bottom: 12px;
+	margin-left: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.card_foto a {
+	color: black;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.tag {
+	background: black;
+	color: #fff;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.badge {
+	background: black;
+	border-radius: 10px;
+	color: #fff;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+
+
+/*footer*/
+footer .wrapper {
+	background-color: #616161;
+	display: block;
+	overflow: hidden;
+	flex-flow: row nowrap;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+}
+
+footer a {
+	font-size: 21px;
+}
+
+footer h2 {
+	visibility: hidden;
+}
+
+.buttons a {
+	background-color: black;
+	color: #fff;
+	padding: 8px;
+	text-decoration: none;
+}
+
+.buttons a:hover {
+	background-color: #ccc;
+	transition: 0.3s;
+}
+
+
+.social {
+	margin-bottom: 26px;
+	width: 20%;
+}
+
+.social p {
+	color: #fff;
+	text-align: center;
+}
+
+.social a {
+	color: #fff;
+	padding-right: 3px;
+}
+
+.buttons {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: auto;
+	width: 20%;
+}
+
+.tekst{
+	width: 60%;
+	text-align: center;
+	margin: auto;
+	color: #fff;
+}
+
+/*RESPONSIVE*/
+@media(min-width: 650px) {
+	nav ul {
+		display: flex;
+	}
+
+	footer .wrapper {
+		display: flex;
+	}
+
+	.social {
+		margin-right: 57px;
+		margin-bottom: 26px;
+		text-align: right;
+	}
+
+	.comments {
+		visibility: visible;
+	}
+}
+
+@media(min-width: 1000px) {
+	.wrapper main {
+		display: flex;
+	}
+
+	aside {
+		width: 33%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -20px;
+	}
+
+	#blogentries {
+		width: 66%;
+	}
+
+	.card {
+		margin-right: 24px;
+	}
 }
